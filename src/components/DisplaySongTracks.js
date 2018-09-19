@@ -10,7 +10,7 @@ class DisplaySongTracks extends Component {
     this.props.getTracks();
   }
   render() {
-    const { trackList, loading, heading } = this.props.tracks;
+    const { trackList, loading } = this.props.tracks;
     if (loading === false) {
       return trackList.map(track => (
         <React.Fragment>
